@@ -4,7 +4,11 @@
 
 <script setup lang="ts">
 </script>
-<style scoped>
+<style>
+*{
+  margin: 0;
+  padding: 0;
+}
 #app {
   /* max-width: 1280px; */
   margin: 0;
