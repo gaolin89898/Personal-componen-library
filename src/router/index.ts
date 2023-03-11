@@ -13,7 +13,7 @@ const routes = [
         component: () => import("@/view/Home/index.vue"),
         meta: {
           title: "首页",
-          icon: "icon-tiaomachaxun",
+          icon: "icon-shouye",
         },
       },
       {
@@ -22,7 +22,7 @@ const routes = [
         component: () => import("@/view/GitPage/index.vue"),
         meta: {
           title: "Git页面",
-          icon: "icon-puhuojihua",
+          icon: "icon-git",
         },
       },
     ],

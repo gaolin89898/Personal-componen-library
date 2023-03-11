@@ -11,7 +11,7 @@
         >
           <template v-for="v in item.children" :key="v">
             <el-menu-item :index="v.path">
-              <SvgIcon :iconName="v.meta?.icon"></SvgIcon>
+              <IconSVG :iconClass="v.meta?.icon" />
               <span>{{ v.meta?.title }}</span>
             </el-menu-item>
           </template>
