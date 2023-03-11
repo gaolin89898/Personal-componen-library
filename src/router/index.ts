@@ -1,4 +1,4 @@
-import { createRouter,createWebHistory} from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 import Layout from "@/layout/index.vue";
 
 const routes = [
@@ -21,7 +21,7 @@ const routes = [
         name: "GitPage",
         component: () => import("@/view/GitPage/index.vue"),
         meta: {
-          title: "Git页面",
+          title: "Git管理",
           icon: "icon-git",
         },
       },
@@ -30,12 +30,12 @@ const routes = [
 ];
 
 const router = createRouter({
-    // 采用 hash 模式  URL不显示路径
-    // history: createWebHashHistory(),
-  
-    // 采用 history 模式  域名后面不带 # 号
-    history: createWebHistory(),
-    routes
-  })
-  
-  export default router
+  // 采用 hash 模式  URL不显示路径
+  // history: createWebHashHistory(),
+
+  // 采用 history 模式  域名后面不带 # 号
+  history: createWebHistory(),
+  routes,
+});
+
+export default router;
