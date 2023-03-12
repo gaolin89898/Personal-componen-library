@@ -13,8 +13,17 @@
     "skipLibCheck": true,
     "noEmit": true,
     "baseUrl": "./",
-    "paths": {"@/*":["src/*"]}
+    "paths": { "@/*": ["src/*"] }
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "src/assets/icon/index.js", "src/assets/icon/index.js"],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "src/assets/icon/index.js",
+    "src/assets/icon/index.js",
+    "./auto-imports.d.ts",
+    "./components.d.ts"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
