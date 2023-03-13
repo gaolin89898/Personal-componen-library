@@ -17,6 +17,33 @@ const routes = [
         },
       },
       {
+        path: "/Blog",
+        name: "Blog",
+        component: () => import("@/view/Blog/index.vue"),
+        meta: {
+          title: "博客管理",
+          icon: "icon-boke",
+        },
+      },
+      {
+        path: "/ComponentLibrary",
+        name: "ComponentLibrary",
+        component: () => import("@/view/ComponentLibrary/index.vue"),
+        meta: {
+          title: "组件库",
+          icon: "icon-zujianku",
+        },
+      },
+      {
+        path: "/ToolBox",
+        name: "ToolBox",
+        component: () => import("@/view/ToolBox/index.vue"),
+        meta: {
+          title: "工具箱",
+          icon: "icon-gongjuxiang",
+        },
+      },
+      {
         path: "/GitPage",
         name: "GitPage",
         component: () => import("@/view/GitPage/index.vue"),
@@ -25,6 +52,25 @@ const routes = [
           icon: "icon-git",
         },
       },
+      {
+        path: "/Authority",
+        name: "Authority",
+        component: () => import("@/view/Authority/index.vue"),
+        meta: {
+          title: "权限管理",
+          icon: "icon-quanxian",
+        },
+      },
+      {
+        path: "/User",
+        name: "User",
+        component: () => import("@/view/User/index.vue"),
+        meta: {
+          title: "用户管理",
+          icon: "icon-yonghu",
+        },
+      },
+      
     ],
   },
 ];

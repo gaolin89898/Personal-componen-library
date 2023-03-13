@@ -1,14 +1,17 @@
 <template>
   <div>
-    <ElButton>{{ aaa }}</ElButton>
-    <IconSVG iconClass="icon-github" />
-    <!-- <el-radio-group v-model="radio1" class="ml-4">
-      <el-radio label="1" size="large">Option 1</el-radio>
-      <el-radio label="2" size="large">Option 2</el-radio>
-    </el-radio-group> -->
+    <el-card style="margin:10px">
+      <el-avatar :size="50" :src="circleUrl" />
+    </el-card>
+    <el-card>
+      <el-button>首页</el-button>
+    </el-card>
   </div>
 </template>
 
 <script lang="ts" setup>
-const aaa = ref<string>("111");
+const circleUrl='https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png'
 </script>
+
+<style lang="scss" scoped>
+</style>
